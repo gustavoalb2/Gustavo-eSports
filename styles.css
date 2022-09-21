@@ -7,11 +7,10 @@ ul{
     list-style: none;
 }
 body{
-    background-image: url(./assets/fundo.jpg);
     background-position: top center; /*centralizar a imagem de fundo*/
     background-size: 100% auto; /* para ficar em 100% da largura da tela independente*/
     background-repeat: no-repeat; /* para não repetir a imagem de fundo na página*/
-    background-color: #121214;
+    background-color: #24193b;
 }
 body *{
     font-family: 'Inter', sans-serif;
