@@ -17,6 +17,11 @@ body *{
     font-family: 'Inter', sans-serif;
     line-height: 160%;
 }
+header{
+    text-align: center; /*alinhar a imagem no centro da página pois a img tem propriedades de texto*/
+    padding-top: 32px;
+    height: calc(120px + 32px);
+}
 header div{
     width: 120px;
     margin: auto;
@@ -34,17 +39,12 @@ header div img{
     border-radius: 50%;
     width: 100%;   
 }
-header{
-    text-align: center; /*alinhar a imagem no centro da página pois a img tem propriedades de texto*/
-    margin-top: 32px;
-}
 main{
     max-width: 580px;
     width: 90%;
     margin: 32px auto;
     display: grid;
     gap: 24px;
-    margin-top: 32px;
 }
 section{
     color: white;
@@ -86,4 +86,43 @@ section ul li:hover {
     border-radius: 50%;
     width: 70px;
     border: 1px solid #443E54;
+}
+
+/* animation */
+
+header div {
+    animation: fromTop .7s .4s backwards;
+}
+main section{
+    animation: fromBottom .7s backwards;
+}
+main section:nth-child(1) {
+    animation-delay: .0s;
+}
+main section:nth-child(2){
+    animation-delay: .4s;
+}
+main section:nth-child(3){
+    animation-delay: .8s;
+}
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px); /*animação de cima para baixo*/
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /*animação de baixo para cima dos cards*/
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
