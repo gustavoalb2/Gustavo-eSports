@@ -1,0 +1,89 @@
+* { /*limpar os espaços padrão que o navegador dá aos elementos do html*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-image: url(./assets/fundo.jpg);
+    background-position: top center; /*centralizar a imagem de fundo*/
+    background-size: 100% auto; /* para ficar em 100% da largura da tela independente*/
+    background-repeat: no-repeat; /* para não repetir a imagem de fundo na página*/
+    background-color: #121214;
+}
+body *{
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+header div{
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    transition: transform .3s;
+}
+header div:hover {
+    transform: scale(1.1);
+    
+}
+header div img{
+    border-radius: 50%;
+    width: 100%;   
+}
+header{
+    text-align: center; /*alinhar a imagem no centro da página pois a img tem propriedades de texto*/
+    margin-top: 32px;
+}
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+    margin-top: 32px;
+}
+section{
+    color: white;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+section div{
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+
+}
+section h2{
+    letter-spacing: -0.47px;
+}
+section p{
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+section ul{
+    display: flex;
+    gap: 16px; /*espaço entre os itens na lista, só funfa com display: flex*/
+    margin-top: 24px;
+    /*flex-wrap: wrap;*/
+}
+section ul li {
+    transition: transform .3s;
+}
+section ul li:hover {
+    transform: scale(1.1);
+}
+.game-list img{
+    width: 90%;
+    border-radius: 8px;
+}
+.channel-list img{
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #443E54;
+}
