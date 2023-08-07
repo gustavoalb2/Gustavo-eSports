@@ -11,7 +11,7 @@ body{
     background-size: 100% auto; /* para ficar em 100% da largura da tela independente*/
     background-repeat: no-repeat; /* para não repetir a imagem de fundo na página*/
     /*background-image: linear-gradient(#9572FC 0%,#141418 100%);*/
-    background-color: #000000;
+   background-image: linear-gradient(180deg, #c8219c 0%, #911c85 70.52%, #6e0968 100%)    ;
 }
 body *{
     font-family: 'Inter', sans-serif;
